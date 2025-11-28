@@ -1,9 +1,9 @@
 
 /*milans css part*/
-body.m1{
+.m1{
 	background-color:#75A95F;     /*home page milan*/
 }
-body.mb2{
+.mb2{
 	background-color:#42633C; /*about page milan*/
 
 
@@ -16,14 +16,21 @@ body.mb2{
 	float:left;
 	padding-right:30px;
 	padding-bottom:20px;
+	width:35%;
+	
+   
 }
 
 .img-right{
 	float:right;
 	padding-left:20px;
+	width:45%;
+	margin-right:30px;
+	margin-left:30px;
+	margin-bottom:20px;
 }
 .MB1{
-	
+	padding-top:50px;
 	font-weight:25;
 	text-align:left;
 	font-size:50px;
@@ -33,15 +40,15 @@ body.mb2{
 	border-color:black;
 	border-style:solid;
     width:40%;
-	
+	box-shadow:2px 2px white;
 	
 }
 .labelmb1{
 	padding:10px;
-	font-weight:bold;
-	text-decoration-line:underline;
+	font-weight:bold;       /*label decoration*/
 	display:block;
 	text-align:center;
+	font-size:30px;
 	
 }
 .labelmb2{
@@ -49,14 +56,10 @@ body.mb2{
 	text-decoration-line:underline;
 	
 }
-.btnmb1{
-	padding:10px;
-	width:30%;    
-	
-}
+
 .listmb2{
 	line-height: 1.6;
-	border-color:black;
+	border-color:black;            /*list decoration*/
 	border-style:solid;
 	float:left;
 	padding:15px;
@@ -82,7 +85,9 @@ body.mb2{
 	border-color:black;
 	width:60%;
 	background-color:#75A95F;
-	margin:20px;
+	margin-top:40px;
+	margin-right:20px;
+	
 	
 }
 	
@@ -90,13 +95,18 @@ body.mb2{
 }
 .h1mb2{
     text-align:center;
+	font-size:30;
+	font-style:bold;
 }
 .MB2{
 	font-weight:25;
 	text-align:left;
 	font-size:50px;
 	color:white;
+	margin-top:50px;
+
 }
+
 
 
 .imgmb3{
@@ -121,6 +131,7 @@ body.mb2{
 }
 .formmb1{
 	background-color:PaleGreen;
+
 }
 /* google font*/
 .bebas-neue-regularmb2{
@@ -139,7 +150,58 @@ body.mb2{
   font-size:18px;
   font-style:italic;
 }
+.bebas-neue-regularmb4{ 
+   font-family: "Bebas Neue", sans-serif;   
+  font-weight: 100;
+  font-size:50px;
+  text-shadow: 2px 2px 5px black;
 
+}
+.bebas-neue-regularmb5{ 
+   font-family: "Bebas Neue", sans-serif;   
+  font-weight: 100;
+  font-size:50px;
+  text-shadow: 2px 2px 1px black;
+  padding-top:20px;
+}
+.btnm1{    
+	margin:15px;     /*styling submit button*/
+	width:25%;
+	border-color:green;
+	border-radius:8px;
+}
+.txtmb2{
+	margin:15px;
+}
+.logo-imgmb1{
+	height:40px;
+	width:40px;
+	margin:5px;
+}
+.imagemb3{
+	padding-top:40px;
+	padding-left:20px;
+}
+#popup{
+	display:none;
+}
+#popup2{
+	display:none;
+	float:right;
+}
+.lblmb1{
+	border:2px solid black;
+	border-radius:50%;
+}
+.txtmb4{
+	align-content:inline;
+	padding-bottom:30px;
+	
+}
+
+
+	
+	
 
 
 	
@@ -154,7 +216,6 @@ body.mb2{
 	
 
 	
-
 
 
 
@@ -186,8 +247,8 @@ body.mb2{
 .nathan{
 	color:#ABC79F;
 	background-color:#42633C;
-	background:url("trees.jpeg");
-	background-repeat: no-repeat;
+	background:;
+	background-repeat:repeat-y;
 	animation: scrollBackground 10s linear infinite;
 	background-size: cover; 
 	 background-attachment: fixed;
@@ -222,16 +283,20 @@ body.mb2{
 
 .im1 {
   width: 100%;  /*makes image not go outside container*/
-  height: 250px;
+  height: 80%;
   border-radius: 12px;
   object-fit:cover;
   transition:1s ease;
+  background-color:rgba(27, 27, 27, 0.9);
+  border:solidrgba(27, 27, 27, 0.9);
+  padding-top:20px;
+  align-items:centre;
   
   
 }
 
 .im1:hover{
-	transform:scale(1.1);
+	transform:scale(1.1);  /*makes image interactive*/
 }
 
 
@@ -351,7 +416,7 @@ table.my-table.table-hover tbody tr:hover > td {
 	background-color: rgba(27, 27, 27, 0.9) ;
 	padding:15px;
 	border-radius: 10px;
-	display:auto;
+	display:flex;
 	flex:wrap;
 	white-space:normal;
 	color: #ABC79F;
@@ -374,6 +439,10 @@ table.my-table.table-hover tbody tr:hover > td {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 100;
   font-style: normal;
+}
+.nav-link {
+    color:  #ABC79F !important;
+	
 }
 
 
@@ -439,10 +508,10 @@ table.my-table.table-hover tbody tr:hover > td {
 .page-two {
 	background-color:#75a95f;
 }
-h1{
+/*h1{
 	color:#0f1e0f;
 	font-size:100px;
-}
+} */
 
 
 
