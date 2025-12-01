@@ -61,9 +61,9 @@
               </ul>
             </li>
           </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
+          <form class="d-flex" role="search" id="searchmb1">
+            <input class="form-control me-2" type="search" id="searchmb2" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit" >Search</button>
           </form>
         </div>
       </div>
@@ -83,17 +83,20 @@
 
 <div class="topm1">
    <h1 class="h1mb2">About us </h1>
-<br>
-<br>
-      <!-- start of paragraphs-->
-   <p class="txtmb2 bebas-neue-regularmb3">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+    <br>
+    <br>
+    <ul class="listabmb2  ">  <!-- start of paragraphs-->
+        <li class=" bebas-neue-regularmb3 litemmb2 ">On our website we have a target to share awarness about Good health and wellbeing.We want to make sure that all people know the importance of health and wellbeing and for people to treate their health as number 1 priority.We want to keep people imformed and keep thme updated with news that are happening around the world regarding good health and wellbeing.</li>
+          <br>
+		  
+       <li class=" bebas-neue-regularmb3 litemmb2">Here you can find all informations about health and wellbeing. if you click <a href="https://www.hse.ie/healthandwellbeing/" class="link-mb2">here</a> you will be able to access all of the informations happening in the Ireland regarding health and wellbeing or just by simply clicking news button on navbar.</li>
+	   <br>
 
-Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-
-Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+         <li class=" bebas-neue-regularmb3 litemmb2">On this website you will find everything you need to know about you good health and wellbeing.On the list below you can see what informations we offer.s </li>
+		 </ul>
   </div>
   </div>
- 
+
   <div class="wrappermb2">
  
  
@@ -101,14 +104,14 @@ Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapi
   <!-- end of the informative paragraph -->
   <!-- start of the list -->
 <div class="listmb2 bebas-neue-regularmb2">
-    <ul>
+    <ol class="olmb3">
 	     <h2 class="lih2m1">here is the list of things you can learn from us</h2>
         <li class="lim1">positive effects of taking care of wellbeing</li>
 		<li class="lim1">how to take care of health and wellbeing</li>
 		<li class="lim1">causes of taking poor care of wellbeing</li>
 		<li class="lim1">targets</li>
 		<li class="lim1"> values</li>
-     </ul>
+     </ol>
 	 </div>
 	  <div class="bottommb1">
     <form class="formmb1 bebas-neue-regularmb2">
@@ -137,11 +140,12 @@ Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapi
 	
 	   <!-- footer -->
 	   </div>
-	   <div>
-		 <hr>
+	   
+	   <div class="footmb2">
+		 <hr class="hrmb2">
 		<br>
 			<footer class="mt-4 text-center inter-regular footer-text">
-                  &copy; 2025 Good Health &amp; Wellbeing Initiative. All rights reserved.
+               <p class="foottxtmb2">&copy; 2025 Good Health &amp; Wellbeing Initiative. All rights reserved.</p>
              </footer>
 			 </div>
 			 
@@ -170,6 +174,31 @@ Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapi
 	   return true;
 	}
 	
+	</script>
+	<!-- new script for the search field on navbar-->
+	<script>
+	let searchForm = document.getElementById("searchmb1");
+	let searchInput = document.getElementById("searchmb2");
+	
+	searchForm.addEventListener('submit', function(e){
+	e.preventDefault();  //to prevent default form subbmision
+	
+	let query = searchInput.value.toLowerCase().trim();
+	    
+		   if(query === "contact"){
+            window.location.href = "index(ns1).html";
+    }else if(query === "targets"){
+            window.location.href = "";
+    }else if (query === "values"){
+             window.location.href = "";
+			 }else if(query === "health"){
+			 window.location.href = "";
+			 }else if(query === "wellbeing"){
+			 window.location.href = "";
+			 }else{
+			 window.location.href = "index.html?query=" +encodeURIComponent(query);
+			 }
+			 });
 	</script>
 
   </body>
