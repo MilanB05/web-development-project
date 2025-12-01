@@ -50,15 +50,7 @@
 	color:white;
 	
 }
-.bottommb1{
-	margin:40px;
-	border-color:black;
-	border-style:solid;
-    width:40%;
-	box-shadow:2px 2px white;
-	border-radius:20px;
-	
-}
+
 .labelmb1{
 	padding:10px;
 	font-weight:bold;       /*label decoration*/
@@ -101,7 +93,7 @@
 	border-style:solid;
 	border-color:black;
 	border-radius:30px;
-	width:60%;
+	width:80%;
 	background-color:#75A95F;
 	margin-top:40px;
 	margin-right:20px;
@@ -114,7 +106,7 @@
 .h1mb2{
     text-align: center;
 	font-size:50px;
-	font-style:bold;
+	
 	text-shadow:2px 2px 5px black;
 	margin-top:30px;
 	margin-bottom:30px;
@@ -136,7 +128,7 @@
 
 .imgmb3{
     transition: transform 0.3s ease;
-	width:600px;
+	width:500px;
 	height:auto;
 	border-radius:10px;
 
@@ -155,12 +147,20 @@
 	gap:50px;                       
 	padding-top:100px;  
 }
-
+.bottommb1{
+	margin:40px;
+	border-color:black;
+	border-style:solid;
+    width:40%;
+	border-radius:20px;
+	
+}
 .formmb1{
 	background-color:#75A95F;
 	border-radius:20px;
 
 }
+
 /* google font*/
 .bebas-neue-regularmb2{
 	
@@ -174,7 +174,7 @@
 .bebas-neue-regularmb3{
 	
   font-family: "Bebas Neue", sans-serif;   
-  font-weight: 100px;
+  font-weight: 100;
   font-size:22px;
   font-style:italic;
 }
@@ -199,8 +199,8 @@
 .btnm1{    
 	margin:15px;     /*styling submit button*/
 	width:25%;
-	border-color:green;
-	border-radius:8px;
+	border-color:black;
+	border-radius:10px;
 }
 
 .txtmb2{
@@ -229,41 +229,52 @@
 	display:none;
 	float:right;
 }
+#popup3{
+	display:none;
+	float:right;
+}
 .lblmb1{
 	border:2px solid black;
 	border-radius:50%;
 }
+.txtmb1{
+	background-color:;
+	font-size:;
+	font-weight:;
+}
 .txtmb4{
-	align-content:inline;
+
 	padding-bottom:30px;
 	
 }
 .litemmb2{
-	padding-bottom:10px;
+	padding-bottom:20px;   /* making space between text on both pages */
 }
 
 .foottxtmb2{
 	color:white;
-	font-size:20px;
-	font-style:bold;
+	font-size:20px;   /*adjusting footer on both pages*/
+	
 }
 .hrmb2{
 	height:5px;
-	background-color:white;
+	background-color:white;  /* giving my hr tag new look*/
 	border:none;
 	
 }
 .spanmb1{
-	background-color:grey;
+	background-color:grey;    /*giving my span tag new color*/
 }
 .spanmb2{
-	background-color:grey;
+	background-color:grey;   
 }
-.link-mb2{
+
+.link-mb2{                 /*link styling*/
 	color:green;
 	text-decoration:underline;
 	cursor:pointer;
 }
+
 .link-mb2:hover{
      color:black;
 }
