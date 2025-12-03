@@ -1,5 +1,7 @@
 
 /*milans css part*/
+
+
 .m1{
 	background-color:#75A95F;     /*home page milan*/
 }
@@ -12,9 +14,7 @@
 .mb1{
 	background-color:#75A95F;
 }
-.img-left:hover{
-	transform:scale(1.05);
-}
+
 .img-left{
    
 	float:left !important;
@@ -24,6 +24,7 @@
 	height:auto;
 	transition: transform 0.3s ease;
 	border-radius:20px;
+	
    
 }
 .img-leftmb1{
@@ -37,7 +38,7 @@
 .img-right{
 	float:right;
 	width:35%;
-	
+	max-width:100%;
 	transition: transform 0.3s ease;
 	border-radius:20px;	
 	
@@ -51,17 +52,35 @@
 	
 }
 
-.labelmb1{
+ .labelmb1{
 	padding:10px;
 	font-weight:bold;       /*label decoration*/
 	display:block;
 	text-align:center;
-	font-size:30px;
+	font-size:30px; 
 	
 }
-.labelmb2{
+  .labelmb2{
 	padding:10px;
-	text-decoration-line:underline;
+     font-size:20px;	 
+	
+}
+.flblmb1{
+	padding:10px;
+}
+ .formmb1{
+	background-color:#75A95F;
+	border-radius:20px;
+
+
+}
+.bottommb1{
+	margin:40px;
+	border-color:black;
+	border-style:solid;
+    width:50%;
+	height:auto;
+	border-radius:20px;
 	
 }
 
@@ -75,6 +94,7 @@
 	margin:50px;
 	background-color:#75A95F;
 	border-radius:20px;
+	
 	
 	
 }
@@ -93,10 +113,10 @@
 	border-style:solid;
 	border-color:black;
 	border-radius:30px;
-	width:80%;
+	width:90%;
 	background-color:#75A95F;
 	margin-top:40px;
-	margin-right:20px;
+	margin-right:10px;
 	
 	
 }
@@ -106,7 +126,6 @@
 .h1mb2{
     text-align: center;
 	font-size:50px;
-	
 	text-shadow:2px 2px 5px black;
 	margin-top:30px;
 	margin-bottom:30px;
@@ -128,16 +147,18 @@
 
 .imgmb3{
     transition: transform 0.3s ease;
-	width:500px;
+	width:400px;
 	height:auto;
-	border-radius:10px;
+	border-radius:20px;
+	font-weight:30px;
 
 
 }
 .wrapper{
 	display:flex;
 	align-items:flex-start;
-	gap:50px;                   /* to put image and div inline */
+	align-content:inline;
+	gap:60px;                   /* to put image and div inline */
 	padding-top:100px;
 }
 
@@ -147,19 +168,8 @@
 	gap:50px;                       
 	padding-top:100px;  
 }
-.bottommb1{
-	margin:40px;
-	border-color:black;
-	border-style:solid;
-    width:40%;
-	border-radius:20px;
-	
-}
-.formmb1{
-	background-color:#75A95F;
-	border-radius:20px;
 
-}
+
 
 /* google font*/
 .bebas-neue-regularmb2{
@@ -216,11 +226,13 @@
 	height:40px;
 	width:40px;
 	margin:5px;
+	
 }
 .imagemb3{
 	
 	padding-top:40px;
 	padding-left:20px;
+	
 }
 #popup{
 	display:none;
@@ -229,14 +241,8 @@
 	display:none;
 	float:right;
 }
-#popup3{
-	display:none;
-	float:right;
-}
-.lblmb1{
-	border:2px solid black;
-	border-radius:50%;
-}
+
+
 .txtmb1{
 	background-color:;
 	font-size:;
@@ -279,8 +285,262 @@
      color:black;
 }
 
+
+/* this part of css is for adjusting my pages for the phone*/
+
+@media (max-width:575.98px){
+	.wrapper,
+	.wrappermb2{
+		display:block;
+		padding-top:80px;
+	}
+	
+	.listmb2,
+	.topm1,
+	.formmb1,
+	.bottommb1{
+		width:100% !important;
+		margin:10px 0 !important;
+		float:none !important;
+	}
+	
+	.imgmb3,
+	.img-left,
+	.img-right{
+		width:100% !important;
+		height:auto !important;
+	float:none !important;
+	}
+}
+	
+
+	
+
+
+
+
+
+
+
+
+
+/*Nathan Spollens CSS*/
+
+/*EEIRE BLACK  #1B1B1B*/
+/*GREEN HOUSE #42633C*/
+/*SIROCCO #5E7D67*/
+/*ASPARAGUS #75A95F*/
+/*Spring rain #ABC79F*/
+
+
+
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.inter-regular {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+   text-align:centre;
+}
+.nathan{
+	color:#ABC79F;
+	background;;
+		background-color:#42633C;
+	 background-repeat: repeat-y;
+	animation: scrollBackground 10s linear infinite;
+	background-size: cover; 
+	 max-width:1400px;  /*size of container max is 1400px */
+	 margin:0 auto;
+	 padding:20px 40px;
+	 display: flex;
+    gap: 40px;          /* space between left and right */
+    align-items: flex-start;
+	padding-top:20px;
 	
 	
+}
+
+.container-md{
+	background-color: rgba(27, 27, 27, 0.9) ;
+	padding:15px;
+	border-radius: 10px;
+	display:auto;
+	flex:wrap;
+	white-space:normal;
+	margin-top:20px;
+	
+	
+	
+	
+	
+    overflow-wrap: break-word; 
+    word-wrap: break-word;     
+    word-break: break-word;    
+    white-space: normal;       
+	
+
+}
+
+.im1 {
+  width: 100%;  /*makes image not go outside container*/
+  height: 100%;
+  border-radius: 12px;
+  object-fit:cover;
+  transition:1s ease;
+  background-color:rgba(27, 27, 27, 0.9);
+  border:solidrgba(27, 27, 27, 0.9);
+  align-items:centre;
+  
+  
+}
+
+.im1:hover{
+	transform:scale(1.1); /*Makes image interactive*/
+}
+
+
+
+	
+
+
+
+/*it targets every element in the table using the crocidle mouth it overrides the default bootstrap elements to impiment the css  */
+
+table.my-table,
+table.my-table > tbody > tr,
+table.my-table > tbody > tr > td,
+table.my-table > tbody > tr > th,
+table.my-table > thead > tr,
+table.my-table > thead > tr > th {
+  background-color: #42633C !important;
+  color: #ABC79F !important;
+  border: 1px solid #5E7D67 !important;
+}
+
+
+
+table.my-table.table-hover tbody tr:hover,
+table.my-table.table-hover tbody tr:hover > td {
+  background-color: #314526 !important;
+  color: #ABC79F !important;
+}
+
+
+.bottom-row{
+	text-align:centre;
+	border-top:solid #ABC79F px;
+	background-color:rgba(27, 27, 27, 0.9);
+	border-radius:20px;
+	border:solid #ABC79F 1px;
+	margin-top:20px;
+}
+
+
+.form-control{
+	background-color:;
+	color: #ABC79F;
+	
+}
+
+.btn-success{
+	background-color:#ABC79F;
+	color:#1B1B1B;
+	border:solid  #1B1B1B ;
+	border-radius:20px;
+}
+
+
+}
+
+.im1{
+	width:100%
+}
+
+
+
+
+
+
+
+.header-top{
+
+	border-radius:10px;
+	margin-bottom:10px;
+	
+	background-color:;
+	box-shadow:  #2px 4px inset ;
+}
+
+.my-custom-row-mid{
+	border-radius:10px;
+	margin-bottom:10px;
+	border: ;
+	background-color:;
+	box-shadow:  #42633C;
+	justify-content:centre;
+}
+
+
+}
+
+ .navbar{
+	 width:100%;
+ }
+ 
+ /*page 2 css */
+
+.nathan2{
+	word-wrap: break-word;
+	background-color: rgba(27, 27, 27, 0.9) ;
+	padding:15px;
+	border-radius: 10px;
+	display:flex;
+	flex:wrap;
+	white-space:normal;
+	color: #ABC79F;
+	width:;
+	 align-items: flex-start;
+	 	margin-top:20px;
+}
+
+.page-2{
+	border:solid #5E7D67;
+	border-radius:10px ;
+	max-width:1400px;
+ padding-top:20px;
+	
+}
+.im2{
+	max-width:100%;
+	padding:5px;
+	
+}
+
+.bebas-neue-regular-2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.nav-link {
+    color:  #ABC79F !important;
+	
+}
+
+.navbarimgns1{
+	height:30px;
+	width:30px;
+}
+
+.im2{
+	border-radius:20px;
+}
 
 
 	
@@ -293,6 +553,7 @@
 	
 	
 	
+	
 
 	
 
@@ -304,17 +565,4 @@
 
 
 
-/* Subheading styles */
-h3 {
-    color: white;
-    margin-bottom: 20px;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-}
-
-
-@media (max-width: 768px) {
-    .bebas-neue-regular {
-        font-size: 2rem;
-    }
-}
 
