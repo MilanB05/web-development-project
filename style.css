@@ -57,7 +57,7 @@
 	font-weight:bold;       /*label decoration*/
 	display:block;
 	text-align:center;
-	font-size:30px; 
+	font-size:32px; 
 	
 }
   .labelmb2{
@@ -70,7 +70,7 @@
 }
  .formmb1{
 	background-color:#75A95F;
-	border-radius:20px;
+	border-radius:20px;   /* this is decorating form */
 
 
 }
@@ -90,7 +90,7 @@
 	border-style:solid;
 	float:left;
 	padding:15px;
-	width:50%;
+	width:60%;
 	margin:50px;
 	background-color:#75A95F;
 	border-radius:20px;
@@ -234,13 +234,6 @@
 	padding-left:20px;
 	
 }
-#popup{
-	display:none;
-}
-#popup2{
-	display:none;
-	float:right;
-}
 
 
 .txtmb1{
@@ -284,32 +277,36 @@
 .link-mb2:hover{
      color:black;
 }
+.txtmb5{
+	padding-bottom:10px;
+}
 
 
 /* this part of css is for adjusting my pages for the phone*/
-
+/* bootstrap media query was used*/
+/*styling for phone*/
 @media (max-width:575.98px){
-	.wrapper,
+	.wrapper,                
 	.wrappermb2{
 		display:block;
 		padding-top:80px;
 	}
 	
-	.listmb2,
+	.listmb2,       /*adjusting size of forms/divs for mobile device*/
 	.topm1,
 	.formmb1,
 	.bottommb1{
-		width:100% !important;
-		margin:10px 0 !important;
-		float:none !important;
+		width:100% ;
+		margin:10px 0;
+		float:none ;
 	}
 	
-	.imgmb3,
+	.imgmb3,   /*adjusting mimages sizes for mobile screen*/
 	.img-left,
 	.img-right{
-		width:100% !important;
-		height:auto !important;
-	float:none !important;
+		width:100% ;
+		height:auto ;
+	float:none;
 	}
 }
 	
@@ -334,7 +331,7 @@
 
 
 
-.bebas-neue-regular {
+.bebas-neue-regularns1 {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -389,7 +386,7 @@
 
 .im1 {
   width: 100%;  /*makes image not go outside container*/
-  height: 100%;
+  height: auto;
   border-radius: 12px;
   object-fit:cover;
   transition:1s ease;
@@ -541,6 +538,230 @@ table.my-table.table-hover tbody tr:hover > td {
 .im2{
 	border-radius:20px;
 }
+
+
+
+ /* Juliet Akinyemi's CSS*/
+/* Body styles for the whole page*/
+.bodyJA {
+    background-color: ForestGreen;
+    padding: 0;
+    margin: 0;
+	padding-top: 80px;
+}
+
+/* Main heading styles */
+.bebas-neue-regular {
+    text-align: center;
+    /* Adds spacing above and below heading */
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: white;
+    /*ext shadow for depth */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Subheading styles */
+.heading{
+    color: white;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Paragraph styling */
+.content-box {
+    line-height: 1.6;
+    background-color: PaleGreen;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Section spacing adds space between each section */
+.section {
+    margin-bottom: 50px;
+}
+
+/* Image row spacing adds space below images */
+.image-row {
+    margin-bottom: 20px;
+}
+
+/* Image column spacing on mobile */
+.image-row .col-md-6 {
+    margin-bottom: 15px;
+}
+
+/* Image styles */
+.img-fluid-rounded {
+    transition: transform 0.3s ease;
+}
+
+/* Image hover effect zooms in when you hover your mouse */
+.img-fluid-rounded:hover {
+    transform: scale(1.05);
+} 
+
+/* font class for body text */
+.inter-regular {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Font class for headings */
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+}
+
+/* Responsive design smaller heading for mobile devices */
+@media (max-width: 768px) {
+    .bebas-neue-regular {
+        font-size: 2rem;
+    }
+}
+
+.JA-logo{
+	height:40px;
+	width:40px;
+	margin:5px;
+}
+
+
+
+/* darias css */
+/* google font*/
+.bebas-neue-regular1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 600;
+  font-size: 70px;
+  font-style: normal;
+  background-image: url("images/greenbc.jpg");
+  color: #0f1e0f;
+}
+/*styling for h3*/
+.bebas-neue-regularh3 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  font-style: normal;
+
+}
+.bebas-neue-regular2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 600;
+  font-size: 70px;
+  font-style: normal;
+  background-image: url("images/grassbc.jpg");
+  color: #a8c79f;
+}
+.bebas-neue-regularh32 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 500;
+  font-size: 35px;
+  font-style: normal;
+
+}
+
+
+.inter-regular {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  font-style: normal;
+ 
+}
+.inter-regularh3 {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 35px;
+  font-style: bold;
+}
+.inter-regularform {
+		font-family: "Inter", sans-serif;
+	  font-weight: 400;
+	  font-size: 25px;
+	  font-style: bold;
+}
+
+
+.bgcolor {
+	background-color:#75a95f;
+	
+	
+}
+
+
+/*makes a box for form*/
+.formds {
+	background-image: url("images/greenbc.jpg");
+	border: 1px solid black;
+	padding:40px;
+	float:center;
+	width:40%;
+	margin-left:100px;
+	margin-bottom: 100px;
+	font-style: bold;
+	font-size: 17px;
+	
+	 
+}
+
+/*logo styling*/
+.logod1 {
+	width:150px;
+    float: right;
+}
+.logo-container {
+	text-align:right;
+	
+}
+.logo-text {
+	color:white;
+	margin-bottom:5px;
+	margin-right:20px;
+	font-size:20px;
+}
+/*text and box styling in html form*/
+.responsive-formd1 {
+	max-width:500px;
+	margin: 20px auto;
+	padding: 10 px;
+	border-radius:10px;
+	font-family: "Inter", sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	font-style: normal;
+}
+/*makes text to be placed all over the box*/
+.responsive-formd1 input,
+.responsive-formd1 textarea {
+	width:90%;
+	margin:7px 0 15px;
+	font-size:10px;
+	padding:10px;
+	box-sizing: border-box;
+	resize: none;   /*doesn't allow user to resize textarea*/
+
+}
+.responsive-formd1 input[type="radio"] {
+	transform:scale (0.5;);
+	margin: 4px 0;
+
+}
+
+
+/*used for mobile version*/
+@media (max-width: 600px){
+	.responsive-formd1 {
+		padding:15px;
+	}
+}
+
 
 
 	

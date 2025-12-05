@@ -54,15 +54,15 @@
                 Content
               </a>
               <ul class="dropdown-menu ">
-                <li><a class="dropdown-item" href="healthandwellbeing.html">How to take care of health and wellbeing</a></li> <!-- dropdown list -->
+                <li><a class="dropdown-item" href="endingepidemics.html">Ending Epidemics of Communicable Diseases</a></li> <!-- dropdown list -->
 				<li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="positiveeffects.html">Positive effects of taking care of wellbeing</a></li>
+                <li><a class="dropdown-item" href="positiveeffects.html">Positive effects</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="poormentalhealth.html">Causes of taking poor care of wellbeing</a></li>
+                <li><a class="dropdown-item" href="enviormentalhealthrisks.html">Enviromental Health Risks</a></li>
 				<li><hr class="dropdown-divider"></li>
-				<li><a class="dropdown-item" href="indexd2(1).html">Target</a></li>
+				<li><a class="dropdown-item" href="targets.html">Target</a></li>
 				<li><hr class="dropdown-divider"></li>
-				<li><a class="dropdown-item" href="indexd1(1).html">Values</a></li>
+				<li><a class="dropdown-item" href="values.html">Values</a></li>
               </ul>
             </li>
           </ul>
@@ -82,8 +82,8 @@
 	    <br>
 	  <br>
 	
-	  <div class="img-leftmb1">
-	       <img id="imgMb3" onmouseover="displayText();" src="images/healthmb1.jpg" alt=" image of ocean" class="img-left" > <!-- image inserted here -->
+	  <div class="img-leftmb1">                           <!-- image from pexels-->
+	       <img id="imgMb3" onmouseover="displayText();" src="images/imgmb5.jpg" alt=" image of ocean" class="img-left" > <!-- image inserted here -->
 	 <!-- start of the paragraph -->
 	  </div>
 	 <br>
@@ -96,7 +96,7 @@
 	       <li class="bebas-neue-regularmb3 litemmb2">Wellbeing also involves mental and emotinal health how you can cope with stress, build relationship, and feel about yourself.Practising self care, being open about your feelings, and seeking support when needed are all important for keeping healthy mindset.Staying connected with others and feeling part of community can boost confidence and resilience.</li>
 	 
 	 
-	       <li class="bebas-neue-regularmb3">Good health and wellbeing are about creating harmony between all areas of your life so you can function at your best. it's not phisical fitness or emotinal balance, it is combination of your habits, your environment, and your mindset.Good health also involves listeing to your body, knowing when to take a breakand slow down when life becomes overwhelming.</li>
+	       <li class="bebas-neue-regularmb3 litemmb2">Good health and wellbeing are about creating harmony between all areas of your life so you can function at your best. it's not phisical fitness or emotinal balance, it is combination of your habits, your environment, and your mindset.Good health also involves listeing to your body, knowing when to take a breakand slow down when life becomes overwhelming.</li>
 	 
 	 
 	      <li class="bebas-neue-regularmb3  litemmb2">When you care for both your and mind, you build a strong foundation that supports you through challanges and helps you grow. Good health and wellbeing are lifelong journeys, shaped by small,consistent actions that help you thrive rather then simply get by.</li>
@@ -107,21 +107,19 @@
   <div class="containerMB2">
     <h2 class="MB2 bebas-neue-regularmb5">Types of mental health and wellbeing</h2>
 
-   <div id="popup2">
-     <p class="txtmb5">This is a chart for balanced lifestyle</p>
-    </div>
+ 
 
     <br>
     <br>
-  <div class="txtmb4">
-      <img src="images/chart.png" alt="picture of the bird" class="img-right" id="imgMb4" onmouseover="text();">
+  <div class="txtmb4">   <!-- images from pexels-->
+      <img src="images/imgmb6.jpg" alt="picture of the bird" class="img-right" id="imgMb4" onmouseover="text();">
 
 <br><br>
       <!-- here goes paragraph describing our content -->
 
    <ul>
 
-      <li class="bebas-neue-regularmb3">Here, we are going to talk about different types of good health and wellbeing. In terms of different type of good health and wellbeing can be broken down into<span class="spanmb1"> Phisycal health,Mental health,Emotionsl wellbeing,Social wellbeing,Spiritual wellbeing,Enviromental wellbeing.</span>In the next paragraphs I'll tell you importance of each</li>
+      <li class="bebas-neue-regularmb3 txtmb5">Here, we are going to talk about different types of good health and wellbeing. In terms of different type of good health and wellbeing can be broken down into<span class="spanmb1"> Phisycal health,Mental health,Emotionsl wellbeing,Social wellbeing,Spiritual wellbeing,Enviromental wellbeing.</span>In the next paragraphs I'll tell you importance of each</li>
 
       <li class="bebas-neue-regularmb3 litemmb2"><span class="spanmb2">Physical health</span> is about keeping your body strong and functioning well.It includes having balanced diet,staying active, getting enough of sleep and avoiding harmful habits.When your body is healthy you have more energy and you can handle daily tasks easily. <span class="spanmb2">Mental health</span> relates to how you think,learn and make decisions.It involves having a clear mind, being able to focus, and coping challanges in healthy ways. </li>
 
@@ -133,34 +131,7 @@
    </div>
     <!-- end of the paragraph -->
 </div>
-
-<!-- js for images for  extra description of images-->
-<script>
-
-    let displayText = document.getElementById("imgMb3");
-	
-	displayText.onmouseover = function(){
-	document.getElementById("popup").style.display = "block";
-	}
-	displayText.onmouseout = function(){
-	document.getElementById("popup").style.display = "none";
-	}
-	</script>
-	
-	<script>
-
-    let text = document.getElementById("imgMb3");
-	
-	text.onmouseover = function(){
-	document.getElementById("popup2").style.display = "block";
-	}
-	text.onmouseout = function(){
-	document.getElementById("popup2").style.display = "none";
-	}
-	</script>
-	
-	
-
+<!-- js for search bar-->
 <script>
 	let searchForm = document.getElementById("searchmb1");
 	let searchInput = document.getElementById("searchmb2");
@@ -168,24 +139,24 @@
 	searchForm.addEventListener('submit', function(e){
 	e.preventDefault();  //to prevent default form subbmision
 	
-	let query = searchInput.value.toLowerCase().trim();
-	    
-		   if(query === "contact"){
+	
+	let query = searchInput.value.toLowerCase().trim();  
+	    if(query === "positive effects")         //when this inputed bring you to the other page
+		   window.location.href = "positiveeffects.html"; 
+		    else if(query === "contact" || query === "contacts us"){
             window.location.href = "contact.html";
     }else if(query === "targets"){
-            window.location.href = "";
+            window.location.href = "targets.html";
     }else if (query === "values"){
-             window.location.href = "";
-    }else if(query === "wellbeing"){
-			 window.location.href = "";
-	 }else if(query === "health"){
-			 window.location.href = "";
-	 }else if(query === "about" || query === "about us"){
+             window.location.href = "values.html";
+			 }else if(query === "Enviromental Heath Risks"){
+			 window.location.href = "enviormentalhealthrisks.html";
+			 }else if(query === "epidemics" || query === "ending epidemics"){
+			 window.location.href = "endingepidemics.html";
+			 }else if(query === "about" || query === "about us"){
 			  window.location.href = "aboutus.html";
-	 }elseif(query === "positive effects"){
-            window.location.href = "positiveeffects.html";
-			}else{
-			 window.location.href = "index.html?query=" +encodeURIComponent(query);
+			  }else{
+			 window.location.href = "index.html?query=" +encodeURIComponent(query); // this is to make sure url is safe
 			 }
 			 });
 	</script>
